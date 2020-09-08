@@ -1,0 +1,21 @@
+body{
+    display: flex;
+}
+.sidebar h1{
+    color: blue;
+    text-align: center;
+}
+
+.sidebar button{
+    color: blue;
+    text-align: center;
+    margin: 5px 5px;
+}
+
+.sidebar{
+    width: 300px;
+    background: bisque;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
