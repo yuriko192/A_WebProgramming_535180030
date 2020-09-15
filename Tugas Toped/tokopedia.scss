@@ -1,26 +1,23 @@
 .col-gr {
   color: #03ac0e;
 }
-.test-bg {
-  background-color: bisque;
-}
+
 .flex {
   display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 .center {
   justify-content: center;
 }
-.center {
-  justify-content: space-between;
-}
-
 .text-lg {
   font-size: 25px;
 }
 .text-sm {
   font-size: 15px;
 }
-
 .text-bold {
   font-weight: bold;
 }
@@ -30,41 +27,154 @@
   border-radius: 20px;
 }
 
-.topup {
-  padding: 10px;
-
-  .head {
-    border-bottom: 2px solid #adadad67;
-    .act {
-      padding: 0 2rem;
-      color: #03ac0e;
-      border-bottom: 2px solid #03ac0e;
-    }
-    a {
-      color: gray;
-    }
-  }
-  .body {
-    .long {
-      width: 18rem;
-    }
-  }
-}
 .b-r {
   border-right: 1px solid #1b471e3d;
 }
 
-.searchinp {
-  width: 50rem !important;
+.navbar {
+  background-color: white;
+
+  .navbrand {
+    font-size: 30px;
+  }
+
+  .kategori-drop {
+    color: grey;
+    font-size: small;
+  }
+  .kategori-drop:hover {
+    background-color: rgb(230, 230, 230);
+    color: #03ac0e;
+  }
+
+  .searchinp {
+    width: 45rem !important;
+  }
+
+  .userarea {
+    .btn {
+      font-size: small;
+      font-weight: bold;
+      padding: 0.3rem 1rem;
+      border-radius: 8px;
+    }
+  }
 }
 
-.kategori-drop {
-  color: grey;
+.topcont {
+  .card {
+    border: none;
+  }
+
+  .midcarr {
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .topup {
+    padding: 10px;
+    align-items: flex-start;
+    .head {
+      border-bottom: 2px solid #adadad67;
+      .act {
+        padding: 0 2rem;
+        color: #03ac0e;
+        border-bottom: 2px solid #03ac0e;
+      }
+      a {
+        color: gray;
+      }
+    }
+    .body {
+      justify-content: space-around;
+      .inp {
+        align-items: flex-start;
+        label {
+          color: gray;
+        }
+        .long {
+          width: 20rem;
+        }
+      }
+      .bbtn {
+        align-self: flex-end;
+      }
+    }
+  }
+  .kat-prom {
+    overflow: hidden;
+    justify-content: space-between;
+    a {
+      text-overflow: ellipsis;
+      display: flex;
+      color: gray;
+      max-height: 25px;
+      img {
+        height: 1.5rem;
+      }
+    }
+  }
 }
 
-.kategori-drop:hover {
-  background-color: rgb(230, 230, 230);
-  color: #03ac0e;
+.shopcarr {
+  h2 {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    a {
+      display: flex;
+      align-items: baseline;
+    }
+    img {
+      width: 3rem;
+    }
+  }
+  .itemcarr {
+    display: flex;
+    justify-content: space-between;
+    .itemsell {
+      width: 12rem;
+      border: 3px solid rgb(238, 238, 238);
+      border-radius: 15px;
+      img {
+        z-index: -1;
+        width: 100%;
+      }
+      .itemtitle {
+        font-size: small;
+        color: gray;
+      }
+      .itemtext {
+        font-size: medium;
+      }
+    }
+  }
+  .katcarr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .kat {
+      width: 22%;
+      img {
+        width: 25%;
+      }
+      .title {
+        font-size: 15px;
+      }
+      .prodnum {
+        font-size: 13px;
+        color: rgba(128, 128, 128, 0.75);
+      }
+    }
+  }
+  .oscarr {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 30%;
+    }
+  }
 }
 
 a,
@@ -76,6 +186,8 @@ a:hover {
   color: #005306;
 }
 
-.card {
-  border: none;
+.div {
+  margin: 20px auto;
+  width: 98%;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.377);
 }

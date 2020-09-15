@@ -25,9 +25,10 @@
     <title>Tokopedia 2.0 | Situs Jual Beli Online Ga Lengkap Sama Sekali</title>
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <span class="col-gr">Tokopedia</span>
+      <a class="navbar-brand navbrand" href="#">
+        <span class="col-gr text-bold">!Tokopedia</span>
       </a>
       <button
         class="navbar-toggler"
@@ -55,10 +56,19 @@
           >
             Kategori
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"> Buku </a>
+            <a class="dropdown-item" href="#"> Dapur </a>
+            <a class="dropdown-item" href="#"> Elektronik </a>
+            <a class="dropdown-item" href="#"> Fashion Anak & Bayi </a>
+            <a class="dropdown-item" href="#"> Fashion Muslim </a>
+            <a class="dropdown-item" href="#"> Fashion Pria </a>
+            <a class="dropdown-item" href="#"> Fashion Wanita </a>
+            <a class="dropdown-item" href="#"> Film & Musik </a>
+            <a class="dropdown-item" href="#"> Gaming </a>
+            <a class="dropdown-item" href="#"> Handphone & Tablet </a>
+            <a class="dropdown-item" href="#"> Ibu & Bayi </a>
+            <a class="dropdown-item" href="#"> Kamera </a>
           </div>
         </div>
         <!-- -------------------------------------------- -->
@@ -83,18 +93,19 @@
         </div>
 
         <!-- -------------------------------------------- -->
-        <div class="nav-item flex mx-auto">
-          <div class="nav-item">
-            <button type="button" class="btn btn-light">Masuk</button>
+        <div class="nav-item flex mx-auto userarea">
+          <div class="nav-item mx-1">
+            <button type="button" class="btn btn-outline-success">Masuk</button>
           </div>
-          <div class="nav-item">
-            <button type="button" class="btn btn-light">Daftar</button>
+          <div class="nav-item mx-1">
+            <button type="button" class="btn btn-success">Daftar</button>
           </div>
         </div>
         <!-- -------------------------------------------- -->
       </div>
     </nav>
-    <div class="maincont">
+    <!-- Carousel Promo, dan Konten Utama-->
+    <div class="topcont mt-3">
       <!-- Caroussel-->
       <div class="flex w-100 midcarr">
         <div
@@ -208,57 +219,265 @@
                 Top Up & Tagihan
                 <a class="text-sm col-gr clickable" href="#">Lihat Semua</a>
               </h5>
-              <div class="topup b-round">
-                <div class="head flex w-100 my-2">
+              <div class="topup b-round h-75 flex-col">
+                <div class="head flex w-100">
                   <a href="#" class="mx-auto act">Pulsa</a>
                   <a href="#" class="mx-auto">Paket Data</a>
                   <a href="#" class="mx-auto">Listrik PLN</a>
                   <a href="#" class="mx-auto">Pesawat</a>
                 </div>
-                <form class="body form-inline">
-                  <input
-                    type="text"
-                    class="form-control mr-2"
-                    placeholder="Tlp, ex: 0895377...."
-                  />
-
-                  <div class="input-group mx-auto">
-                    <select class="custom-select long">
-                      <option selected>Nominal Pulsa</option>
-                      <option value="1">Rp. 50.000</option>
-                      <option value="2">Rp. 30.000</option>
-                      <option value="3">Rp. 10.000</option>
-                    </select>
+                <form class="body form-inline my-auto flex w-100">
+                  <div class="flex-col mr-2 inp">
+                    <label for="phonenum">No Telepon</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Tlp, ex: 0895377...."
+                      id="phonenum"
+                    />
                   </div>
-
-                  <button type="submit" class="btn btn-success">Beli</button>
+                  <div class="mx-auto inp flex-col">
+                    <label for="pulsanom">Nominal Pulsa</label>
+                    <div class="input-group">
+                      <select class="custom-select long" id="pulsanom">
+                        <option selected>Nominal Pulsa</option>
+                        <option value="1">Rp. 50.000</option>
+                        <option value="2">Rp. 30.000</option>
+                        <option value="3">Rp. 10.000</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success bbtn">
+                    Beli
+                  </button>
                 </form>
               </div>
             </div>
           </div>
         </div>
+        <!-- Kategori Promo -->
+        <div class="flex mx-4 mb-4 kat-prom">
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/iEWsxH/2020/8/25/0a133911-788c-4041-afc7-ed0844fd1cf0.png.webp"
+            />
+            Kategori</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/4/26/3127195/3127195_965ca072-7a2d-4991-b572-928d5c95e644.png.webp"
+            />
+            Semua Promo</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/6/24/20723472/20723472_a12cf0e3-7253-4645-aca1-4fbd7d8106a1.png.webp"
+            />
+            Kesehatan</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/6/24/20723472/20723472_bf50c288-713e-456d-86e1-607d8c58cbee.png.webp"
+            />
+            Makanan & Minuman</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/4/2/3127195/3127195_63153161-ab6c-4b5d-862c-7286bcf7f189.png.webp"
+            />
+            Dapur</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2020/7/2/85531617/85531617_d81fe23b-74ab-41c8-972f-2262a15b1c90.png.webp"
+            />
+            Emas</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/5/20/3127195/3127195_26ce0623-ad62-4042-ae30-c720141a1661.png.webp"
+            />
+            Pulsa</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/4/2/3127195/3127195_d4738154-609d-42c0-8a26-44944a832d61.png.webp"
+            />
+            Handphone & Tablet</a
+          >
+          <a href="#" class="b-round mx-2 py-1 px-2">
+            <img
+              src="https://ecs7-p.tokopedia.net/img/cache/100-square/attachment/2019/4/2/3127195/3127195_a168b69d-75fa-4c81-8895-f18ac4d2f20b.png.webp"
+            />
+            Elektronik</a
+          >
+        </div>
       </div>
     </div>
+    <div class="div"></div>
+    <!-- Karousel Barang Barang-->
+    <div class="shopcarr mx-2 my-2">
+      <h2 class="ml-3 mb-4">
+        Terlaris Untukmu
+        <a href="#" class="clickable text-sm col-gr mx-2"> Lihat Semua</a>
+      </h2>
+      <div class="itemcarr">
+        <a class="itemsell b-round flex-col mx-2" href="#">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/300-square/attachment/2020/9/15/27260303/27260303_cfd1d9d6-40ce-4276-a41a-c1a885d3f18a.jpg.webp"
+          />
+          <div class="card-body">
+            <h5 class="itemtitle">Masker keliatan baru</h5>
+            <h4 class="itemtext">Rp59.500</h4>
+          </div>
+        </a>
+        <a class="itemsell b-round flex-col mx-2" href="#">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/300-square/product-1/2020/7/28/12206421/12206421_7bfb7131-3905-4724-bf45-fc6f836f8ddd_1000_1000.webp"
+          />
+          <div class="card-body">
+            <h5 class="itemtitle">Disinfektan 100% air jamin aman</h5>
+            <h4 class="itemtext">Rp50.500</h4>
+          </div>
+        </a>
+        <a class="itemsell b-round flex-col mx-2" href="#">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/7/11/1821002/1821002_25e64074-309f-4215-a4dd-9480ac70387d_640_640.jpg.webp"
+          />
+          <div class="card-body">
+            <h5 class="itemtitle">Bungkus Kapal Api Spesial Mix</h5>
+            <h4 class="itemtext">Rp500</h4>
+          </div>
+        </a>
+        <a class="itemsell b-round flex-col mx-2" href="#">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/7/25/40001454/40001454_281a5c62-3cb7-48e4-9fe6-07ba88bb98dc_800_800.webp"
+          />
+          <div class="card-body">
+            <h5 class="itemtitle">Tempat Sepatu Serasa Lego</h5>
+            <h4 class="itemtext">Rp10.500</h4>
+          </div>
+        </a>
+        <a class="itemsell b-round flex-col mx-2" href="#">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/300-square/product-1/2020/3/31/499869/499869_ba648c3d-64d9-4c97-9115-636151bbfc75_700_700.webp"
+          />
+          <div class="card-body">
+            <h5 class="itemtitle">Airpod Wireless Dengan Kabel</h5>
+            <h4 class="itemtext">Rp17.900</h4>
+          </div>
+        </a>
+        <a class="itemsell b-round flex-col mx-2" href="#">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2019/11/1/382551/382551_8e69c7a4-25f3-48c6-99f3-6477c4ea1ebc_1080_1080.webp"
+          />
+          <div class="card-body">
+            <h5 class="itemtitle">NICE</h5>
+            <h4 class="itemtext">Rp28.500</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="div"></div>
+    <!-- Karousel Kategori Barang-->
+    <div class="shopcarr mx-2 my-2">
+      <h2 class="ml-3 mb-4">
+        Paling Banyak Dicari
+        <a href="#" class="clickable text-sm col-gr mx-2">
+          <i data-feather="refresh-cw"></i> Muat Lainnya</a
+        >
+      </h2>
+      <div class="katcarr mx-2">
+        <div class="kat flex b-round">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2019/7/7/503886/503886_fc3cf564-d6d8-4ce8-88b3-f2c3c36ff0cf_700_700.jpg.webp"
+            class="ml-2"
+          />
+          <div class="flex-col mt-2 mx-2">
+            <h4 class="title">Meja Lipat</h4>
+            <h5 class="prodnum">129rb produk</h5>
+          </div>
+        </div>
+        <div class="kat flex b-round">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2018/1/12/4604/4604_d9ae63b4-a985-4873-959a-6cd98bdb7b0c_700_700.jpg.webp"
+            class="ml-2"
+          />
+          <div class="flex-col mt-2 mx-2">
+            <h4 class="title">Rak Belum di susun</h4>
+            <h5 class="prodnum">278rb produk</h5>
+          </div>
+        </div>
+        <div class="kat flex b-round">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/5/8/18298587/18298587_07daa7dc-ceb2-4c45-8e3b-c674672a0701_700_700.webp"
+            class="ml-2"
+          />
+          <div class="flex-col mt-2 mx-2">
+            <h4 class="title">Timbangan Digital</h4>
+            <h5 class="prodnum">398rb Produk</h5>
+          </div>
+        </div>
+        <div class="kat flex b-round">
+          <img
+            src="https://ecs7-p.tokopedia.net/img/cache/300-square/attachment/2020/8/17/32520341/32520341_32519289-1251-413d-b86f-293cf07320a4.jpg.webp"
+            class="ml-2"
+          />
+          <div class="flex-col mt-2 mx-2">
+            <h4 class="title">Kabel Digital</h4>
+            <h5 class="prodnum">490rb Produk</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div"></div>
+    <!-- Karousel Official Shop-->
+    <div class="shopcarr mx-2 my-2">
+      <h2 class="ml-3 mb-4">
+        <img
+          src="https://ecs7.tokopedia.net/desktop/home-revamp/official-store.png"
+          alt=""
+        />
+        Official Store
+        <a href="#" class="clickable text-sm col-gr mx-2"> Lihat Semua</a>
+      </h2>
+      <div class="oscarr mx-2">
+        <img
+          src="https://ecs7-p.tokopedia.net/img/cache/400/wCVIqt/2020/9/13/1c3b4d6d-9534-40e8-b183-93b3e79b8d7e.jpg.webp"
+          class="b-round"
+        />
+        <img
+          src="https://ecs7-p.tokopedia.net/img/cache/400/wCVIqt/2020/9/13/a71e2c61-8665-4f4e-94c4-0f4015009054.jpg.webp"
+          class="b-round"
+        />
+        <img
+          src="https://ecs7-p.tokopedia.net/img/cache/400/wCVIqt/2020/9/13/f18777de-f218-4321-a132-5dc2f49cae4f.jpg.webp"
+          class="b-round"
+        />
+      </div>
+    </div>
+    <div class="div"></div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      feather.replace();
-    </script>
+    <!-- Script Area -->
+    <div>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        feather.replace();
+      </script>
+    </div>
   </body>
 </html>
